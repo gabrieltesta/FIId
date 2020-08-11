@@ -1,0 +1,481 @@
+[{
+        "ticker": "ABCP11",
+        "nome": "Grand Plaza Shopping"
+    },
+    {
+        "ticker": "ALMI11",
+        "nome": "Torre Almirante"
+    },
+    {
+        "ticker": "ALZR11",
+        "nome": "Alianza Trust Renda Imobiliária"
+    },
+    {
+        "ticker": "BARI11",
+        "nome": "Barigui Rendimentos"
+    },
+    {
+        "ticker": "BBFI11B",
+        "nome": "BB Progressivo"
+    },
+    {
+        "ticker": "BBPO11",
+        "nome": "BB Progressivo II"
+    },
+    {
+        "ticker": "BBRC11",
+        "nome": "BB Renda Corporativa"
+    },
+    {
+        "ticker": "BBVJ11",
+        "nome": "Cidade Jardim Continental Tower"
+    },
+    {
+        "ticker": "BCFF11",
+        "nome": "BTG Pactual Fundo de Fundos"
+    },
+    {
+        "ticker": "BCIA11",
+        "nome": "Bradesco Carteira Imobiliária Ativa"
+    },
+    {
+        "ticker": "BCRI11",
+        "nome": "Banestes Recebíveis Imobiliários"
+    },
+    {
+        "ticker": "BMLC11B",
+        "nome": "BM Brascan Lajes Corporativas"
+    },
+    {
+        "ticker": "BPFF11",
+        "nome": "Brasil Plural Absoluto Fundo de Fundos"
+    },
+    {
+        "ticker": "BRCO11",
+        "nome": "Bresco Logística"
+    },
+    {
+        "ticker": "BRCR11",
+        "nome": "BTG Pactual Corporate Office Fund"
+    },
+    {
+        "ticker": "BTCR11",
+        "nome": "BTG Pactual Crédito Imobiliário"
+    },
+    {
+        "ticker": "BTLG11",
+        "nome": "BTG Pactual Logística"
+    },
+    {
+        "ticker": "BZLI11",
+        "nome": "BRAZIL REALTY"
+    },
+    {
+        "ticker": "CARE11",
+        "nome": "Brazilian GraveyardDeath Care"
+    },
+    {
+        "ticker": "CBOP11",
+        "nome": "Castello Branco Office Park"
+    },
+    {
+        "ticker": "CEOC11",
+        "nome": "CEO Cyrela Commercial Properties"
+    },
+    {
+        "ticker": "CNES11",
+        "nome": "Cenesp"
+    },
+    {
+        "ticker": "CPFF11",
+        "nome": "Capitânia REIT FOF"
+    },
+    {
+        "ticker": "CPTS11",
+        "nome": "Capitânia Securities II"
+    },
+    {
+        "ticker": "CTXT11",
+        "nome": "Centro Têxtil Internacional"
+    },
+    {
+        "ticker": "CVBI11",
+        "nome": "VBI CRI"
+    },
+    {
+        "ticker": "CXRI11",
+        "nome": "Caixa Rio Bravo Fundo de Fundos"
+    },
+    {
+        "ticker": "EDGA11",
+        "nome": "Edifício Galeria"
+    },
+    {
+        "ticker": "FAED11",
+        "nome": "Anhanguera Educacional"
+    },
+    {
+        "ticker": "FAMB11B",
+        "nome": "Edifício Almirante Barroso"
+    },
+    {
+        "ticker": "FCFL11",
+        "nome": "Campus Faria Lima"
+    },
+    {
+        "ticker": "FEXC11",
+        "nome": "BTG Pactual Fundo de CRI"
+    },
+    {
+        "ticker": "FIGS11",
+        "nome": "General Shopping Ativo e Renda"
+    },
+    {
+        "ticker": "FIIB11",
+        "nome": "Industrial do Brasil"
+    },
+    {
+        "ticker": "FIIP11B",
+        "nome": "RB Capital Renda I"
+    },
+    {
+        "ticker": "FLMA11",
+        "nome": "Continental Square Faria Lima"
+    },
+    {
+        "ticker": "FLRP11",
+        "nome": "Floripa Shopping"
+    },
+    {
+        "ticker": "FPAB11",
+        "nome": "Projeto Água Branca"
+    },
+    {
+        "ticker": "FVBI11",
+        "nome": "Fundo VBI FL 4440"
+    },
+    {
+        "ticker": "FVPQ11",
+        "nome": "Via Parque"
+    },
+    {
+        "ticker": "GGRC11",
+        "nome": "GGR COVEPI"
+    },
+    {
+        "ticker": "GRLV11",
+        "nome": "CSHG GR Louveira"
+    },
+    {
+        "ticker": "GSFI11",
+        "nome": "General Shopping e Outlets"
+    },
+    {
+        "ticker": "GTWR11",
+        "nome": "Green Towers"
+    },
+    {
+        "ticker": "HABT11",
+        "nome": "Habitat II"
+    },
+    {
+        "ticker": "HCRI11",
+        "nome": "Hospital da Criança"
+    },
+    {
+        "ticker": "HCTR11",
+        "nome": "HECTARE CE"
+    },
+    {
+        "ticker": "HFOF11",
+        "nome": "Hedge TOP FOFII 3"
+    },
+    {
+        "ticker": "HGBS11",
+        "nome": "Hedge Brasil Shopping"
+    },
+    {
+        "ticker": "HGCR11",
+        "nome": "CSHG Recebíveis Imobiliários"
+    },
+    {
+        "ticker": "HGFF11",
+        "nome": "CSHG Imobiliário FOF"
+    },
+    {
+        "ticker": "HGLG11",
+        "nome": "CSHG Logística"
+    },
+    {
+        "ticker": "HGPO11",
+        "nome": "CSHG Prime Offices"
+    },
+    {
+        "ticker": "HGRE11",
+        "nome": "CSHG Real Estate"
+    },
+    {
+        "ticker": "HGRU11",
+        "nome": "CSHG Renda Urbana"
+    },
+    {
+        "ticker": "HSML11",
+        "nome": "HSI Malls"
+    },
+    {
+        "ticker": "HTMX11",
+        "nome": "Hotel Maxinvest"
+    },
+    {
+        "ticker": "IBFF11",
+        "nome": "FOF Integral Brei"
+    },
+    {
+        "ticker": "IRDM11",
+        "nome": "Iridium Recebíveis Imobiliários"
+    },
+    {
+        "ticker": "JRDM11",
+        "nome": "Shopping Jardim Sul"
+    },
+    {
+        "ticker": "JSRE11",
+        "nome": "JS Real Estate Multigestão"
+    },
+    {
+        "ticker": "KFOF11",
+        "nome": "Kinea Fundo de Fundos"
+    },
+    {
+        "ticker": "KNCR11",
+        "nome": "Kinea Rendimentos Imobiliários FII"
+    },
+    {
+        "ticker": "KNHY11",
+        "nome": "Kinea High Yield CRI"
+    },
+    {
+        "ticker": "KNIP11",
+        "nome": "Kinea Índices de Preços"
+    },
+    {
+        "ticker": "KNRE11",
+        "nome": "Kinea II Real Estate Equity"
+    },
+    {
+        "ticker": "KNRI11",
+        "nome": "Kinea Renda Imobiliária"
+    },
+    {
+        "ticker": "LGCP11",
+        "nome": "LOG CP Inter"
+    },
+    {
+        "ticker": "LVBI11",
+        "nome": "VBI Logístico"
+    },
+    {
+        "ticker": "MALL11",
+        "nome": "MALLS BRASIL PLURAL"
+    },
+    {
+        "ticker": "MAXR11",
+        "nome": "Max Retail"
+    },
+    {
+        "ticker": "MBRF11",
+        "nome": "Mercantil do Brasil"
+    },
+    {
+        "ticker": "MCCI11",
+        "nome": "Mauá Capital Recebíveis Imobiliários"
+    },
+    {
+        "ticker": "MFII11",
+        "nome": "Mérito Desenvolvimento Imobiliário I"
+    },
+    {
+        "ticker": "MGFF11",
+        "nome": "Mogno Fundo de Fundos"
+    },
+    {
+        "ticker": "MXRF11",
+        "nome": "Maxi Renda"
+    },
+    {
+        "ticker": "NSLU11",
+        "nome": "Hospital Nossa Senhora de Lourdes"
+    },
+    {
+        "ticker": "ONEF11",
+        "nome": "The One"
+    },
+    {
+        "ticker": "OUJP11",
+        "nome": "Ourinvest JPP"
+    },
+    {
+        "ticker": "OULG11",
+        "nome": "Ourinvest Logística"
+    },
+    {
+        "ticker": "PATC11",
+        "nome": "Pátria Edifícios Corporativos"
+    },
+    {
+        "ticker": "PLCR11",
+        "nome": "Plural Recebíveis Imobiliários"
+    },
+    {
+        "ticker": "PORD11",
+        "nome": "Polo CRI II"
+    },
+    {
+        "ticker": "PQDP11",
+        "nome": "Parque Dom Pedro Shopping Center"
+    },
+    {
+        "ticker": "QAGR11",
+        "nome": "Quasar Agro"
+    },
+    {
+        "ticker": "RBBV11",
+        "nome": "JHSF Rio Bravo Fazenda Boa Vista"
+    },
+    {
+        "ticker": "RBED11",
+        "nome": "Rio Bravo Renda Educacional"
+    },
+    {
+        "ticker": "RBFF11",
+        "nome": "Rio Bravo IFIX"
+    },
+    {
+        "ticker": "RBRD11",
+        "nome": "RB Capital Renda II"
+    },
+    {
+        "ticker": "RBRF11",
+        "nome": "RBR Alpha Multiestratégia Real Estate"
+    },
+    {
+        "ticker": "RBRR11",
+        "nome": "RBR Rendimentos High Grade"
+    },
+    {
+        "ticker": "RBVA11",
+        "nome": "Rio Bravo Renda Varejo"
+    },
+    {
+        "ticker": "RCRB11",
+        "nome": "Rio Bravo Renda Corporativa"
+    },
+    {
+        "ticker": "RECT11",
+        "nome": "UBS BR OFFICE"
+    },
+    {
+        "ticker": "RNGO11",
+        "nome": "Rio Negro"
+    },
+    {
+        "ticker": "SADI11",
+        "nome": "Santander Papéis Imobiliários CDI"
+    },
+    {
+        "ticker": "SDIL11",
+        "nome": "SDI Rio Bravo Renda Logística"
+    },
+    {
+        "ticker": "SHPH11",
+        "nome": "Shopping Pátio Higienópolis"
+    },
+    {
+        "ticker": "SPTW11",
+        "nome": "SP Downtown"
+    },
+    {
+        "ticker": "TEPP11",
+        "nome": "Tellus Properties"
+    },
+    {
+        "ticker": "TFOF11",
+        "nome": "Hedge TOP FOFII"
+    },
+    {
+        "ticker": "TGAR11",
+        "nome": "TG Ativo Real"
+    },
+    {
+        "ticker": "THRA11",
+        "nome": "BM Cyrela Thera Corporate"
+    },
+    {
+        "ticker": "UBSR11",
+        "nome": "UBS BR Recebíveis"
+    },
+    {
+        "ticker": "VGIR11",
+        "nome": "VALORA RE III"
+    },
+    {
+        "ticker": "VILG11",
+        "nome": "Vinci Logística"
+    },
+    {
+        "ticker": "VINO11",
+        "nome": "Vinci Offices"
+    },
+    {
+        "ticker": "VISC11",
+        "nome": "Vinci Shopping Centers"
+    },
+    {
+        "ticker": "VLOL11",
+        "nome": "Vila Olímpia Corporate"
+    },
+    {
+        "ticker": "VRTA11",
+        "nome": "Fator Verità"
+    },
+    {
+        "ticker": "VSHO11",
+        "nome": "Votorantim Shopping"
+    },
+    {
+        "ticker": "VTLT11",
+        "nome": "Votorantim Logística"
+    },
+    {
+        "ticker": "WPLZ11",
+        "nome": "West Plaza"
+    },
+    {
+        "ticker": "XPCI11",
+        "nome": "XP Crédito"
+    },
+    {
+        "ticker": "XPCM11",
+        "nome": "XP Corporate Macaé"
+    },
+    {
+        "ticker": "XPIN11",
+        "nome": "XP Industrial"
+    },
+    {
+        "ticker": "XPLG11",
+        "nome": "XP LOG"
+    },
+    {
+        "ticker": "XPML11",
+        "nome": "XP Malls"
+    },
+    {
+        "ticker": "XPPR11",
+        "nome": "XP Properties"
+    },
+    {
+        "ticker": "XTED11",
+        "nome": "TRX Edifícios Corporativos"
+    }
+]
