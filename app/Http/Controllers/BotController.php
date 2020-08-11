@@ -86,7 +86,7 @@ class BotController extends Controller
             $this->bot
                 ->sendMessage([
                     'chat_id'                   => $this->chat_id,
-                    'text'                      => "<b>$ticker</b>\r\n".$mensagem['nome']."\r\nLink: ".$mensagem['url'],
+                    'text'                      => "<b>$ticker</b>\r\n".$mensagem['nome']."\r\n<a href=\"".$mensagem['url']."\">Clique aqui para visualizar.</a>",
                     'parse_mode'                => 'html',
                     'disable_web_page_preview'  => true,
                     'disable_notification'      => true
@@ -94,6 +94,7 @@ class BotController extends Controller
         }
         catch(\Exception $e)
         {
+	    \Log::error($e->getMessage());
             \Log::error('['.$ticker.']Erro ao enviar a mensagem');
             return false;
         }
