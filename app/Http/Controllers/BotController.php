@@ -77,7 +77,7 @@ class BotController extends Controller
             return false;
         }
 
-        return $comunicados;
+        return array_reverse($comunicados);
     }
 
     private function enviaMensagemBot($ticker, $mensagem) {
