@@ -5,7 +5,7 @@
 
 É difícil acompanhar os comunicados, que nem sempre saem em dias programados, ou em horário comercial. Possuir um feed automático no Telegram facilita imensamente este processo de acompanhar os FIIs de sua carteira.
 
-O Bot funciona com um webscraper, lendo a seção de Comunicados, de cada FII informado no arquivo fii.json(storage/app/fii.json), um a um, e enviando uma mensagem ao bot no telegram caso possua as seguinte condições:
+O Bot funciona com um webscraper, lendo a seção de Comunicados do [FundsExplorer](http://fundsexplorer.com.br/), de cada FII informado no arquivo fii.json(storage/app/fii.json), um a um, e enviando uma mensagem ao bot no telegram caso possua as seguinte condições:
 
  - Possui em seu nome a data atual (dd/mm/yyyy) ou espaço + mês/ano atual ( mm/yyyy);
  - Não está salvo no arquivo de cache físico.
