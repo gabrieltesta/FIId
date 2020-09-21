@@ -1,79 +1,32 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+# FIId
 
-## About Laravel
+**FIId** foi criado pensando-se na necessidade de um Feed de comunicados de Fundos de Investimento Imobiliários, os FIIs, dando assim seu nome Feed + FII = FIId.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+É difícil acompanhar os comunicados, que nem sempre saem em dias programados, ou em horário comercial. Possuir um feed automático no Telegram facilita imensamente este processo de acompanhar os FIIs de sua carteira.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+O Bot funciona com um webscraper, lendo a seção de Comunicados do [FundsExplorer](http://fundsexplorer.com.br/), de cada FII informado no arquivo fii.json(storage/app/fii.json), um a um, e enviando uma mensagem ao bot no telegram caso possua as seguinte condições:
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+ - Possui em seu nome a data atual (dd/mm/yyyy) ou espaço + mês/ano atual ( mm/yyyy);
+ - Não está salvo no arquivo de cache físico.
 
-## Learning Laravel
+Os comunicados enviados são salvos em arquivos de Cache físicos utilizando o próprio Laravel, de forma que não tenha envios repetidos, com um arquivo por FII. A utilização de cache também é utilizada para evitar o uso de um banco de dados, desnecessário para uma aplicação deste tamanho.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Tecnologias utilizadas
+ - PHP 7;
+ - [Laravel 7](https://laravel.com/);
+ - [Telegram Bot SDK (irazasyed/telegram-bot-sdk)](https://github.com/irazasyed/telegram-bot-sdk);
+ - [Laravel Facade for Goutte (dweidner/laravel-goutte)](https://github.com/dweidner/laravel-goutte).
+ 
+ O Bot é executado via CRON em uma AWS EC2 (t2.micro) a cada 30 minutos.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Canais
 
-## Laravel Sponsors
+ - [FIId](https://t.me/fiid_feed_fii) 
+ 
+## Utilização
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Apenas faça um git clone, e, no arquivo .env, insira os valores:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+ - TELEGRAM_CHAT_ID => Com o chat ID que deseja que envie a mensagem;
+ - TELEGRAM_TOKEN => Token do Telegram Bot.
