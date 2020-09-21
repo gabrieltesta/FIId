@@ -36,11 +36,16 @@ class BotController extends Controller
     {
         foreach($this->fiis as $fii) {
             $url = "https://www.fundsexplorer.com.br/funds/".$fii->ticker;
-
             if(!$cache = Cache::get($fii->ticker))
                 $cache = [];
-
-            if($comunicados = $this->getComunicados($url, $cache)){
+           
+	    if(!is_array($cache)){
+		$cache_string = $cache;
+		$cache = [];
+		$cache[] = $cache_string;
+	    }
+ 
+	    if($comunicados = $this->getComunicados($url, $cache)){
                 foreach($comunicados as $comunicado) {
                     if($this->enviaMensagemBot($fii->ticker, $comunicado)) {
                         Cache::add($fii->ticker, $comunicado['nome']);
@@ -73,7 +78,7 @@ class BotController extends Controller
                 }
             });
         } catch(\Exception $e) {
-            \Log::error('Erro no webscraper');
+            \Log::error('Erro no webscraper: '.$e->getMessage());
             return false;
         }
 
