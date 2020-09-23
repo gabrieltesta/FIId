@@ -36,21 +36,19 @@ class BotController extends Controller
     {
         foreach($this->fiis as $fii) {
             $url = "https://www.fundsexplorer.com.br/funds/".$fii->ticker;
-            if(!$cache = Cache::get($fii->ticker))
-                $cache = [];
-           
-	    if(!is_array($cache)){
-		$cache_string = $cache;
+            if(!$cache = json_decode(Cache::get($fii->ticker)))
 		$cache = [];
-		$cache[] = $cache_string;
-	    }
- 
+			 
+
 	    if($comunicados = $this->getComunicados($url, $cache)){
                 foreach($comunicados as $comunicado) {
                     if($this->enviaMensagemBot($fii->ticker, $comunicado)) {
-                        Cache::add($fii->ticker, $comunicado['nome']);
+			\Log::info($fii->ticker.'] Comunicado enviado: '$comunicado['nome'].$comunicado['url']);
+			$cache[] = $comunicado['url'];
                     }
                 }
+		
+		Cache::put($fii->ticker, json_encode($cache));
             }
         }
 
@@ -67,7 +65,7 @@ class BotController extends Controller
             $goutte = GoutteFacade::request('GET', $url);
             $goutte->filter('.bulletin-text-link')->each(function ($node) use (&$comunicados, $cache, $today, $thisMonth) {
                 // Verifica se já foi enviado
-                if(!in_array($node->text(), $cache)) {
+                if(!in_array($node->attr('href'), $cache)) {
                     // Verifica se é do dia/mês corrente
                     if(strpos($node->text(), $today) !== false || strpos($node->text(), ' '.$thisMonth) !== false) {
                         $comunicados[] = [
@@ -77,7 +75,8 @@ class BotController extends Controller
                     }
                 }
             });
-        } catch(\Exception $e) {
+        
+	} catch(\Exception $e) {
             \Log::error('Erro no webscraper: '.$e->getMessage());
             return false;
         }
